@@ -255,7 +255,7 @@ def get_distances(data, partition, ml_const, cl_const):
 	return distances
 
 
-def RCPD_AC(data, const, ml_const, cl_const, n_clusters, lamb, beta, k_thresh, norm_thresh, max_it):
+def TSHACC(data, const, ml_const, cl_const, n_clusters, lamb, beta, k_thresh, norm_thresh, max_it):
 
 	#Obtain similarity matrix using the RCPD method
 	W = RCPD(data, const, lamb, beta, k_thresh, norm_thresh, max_it)
